@@ -1,0 +1,59 @@
+.tab-link {
+	margin: 0px 40px 0px 40px
+}
+.tab {
+	vertical-align: top;
+	background-color: ghostwhite;
+	color: orange;
+	cursor: pointer;
+	height: 50px;
+	width: 150px;
+	border: none;
+	border-radius: 10px;
+	font-family: verdana, geneva, sans-serif;
+	font-size: 16px;
+	font-weight: 550;
+}
+
+h1 {
+	font-family: verdana, geneva, sans-serif;
+	color: orange;
+}
+
+.search-bar {
+	background-color: ghostwhite;
+	border: none;
+	border-radius: 25px;
+	height: 25px;
+	width: 200px;
+	padding: 0px 10px 0px 10px;
+	background-image: 'images/search.png';
+    background-repeat: no-repeat;
+    background-position: left center;
+	outline: none;
+}
+
+.search-bar::placeholder {
+	color: darkgray;
+}
+
+h5 {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+img {
+	position: absolute;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 40px;
+	margin: 25px 0px 0px 100px;
+	width: 35%;
+	height: auto;
+}
+
+hr {
+	margin-top: 25px;
+}

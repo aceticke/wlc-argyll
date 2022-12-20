@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' href='style.css'/>
+		<title>Argyll American Diner | Directions</title>
+	</head>
+
+	<body>
+		<center>
+			<h1>Welcome to Argyll American Diner!</h1>
+			<a class='tab-link' href='home.html'><button class='tab'>Home</button></a>
+			<a class='tab-link' href='menu-events.html'><button class='tab'>Menus and Events</button></a>
+			<a class='tab-link' href='directions.html'><button class='tab'>Directions</button></a>
+			<a class='tab-link' href='contact.html'><button class='tab'>Contact Us</button></a>
+			<br><br>
+			<form id='form' role='search'>
+				<input class='search-bar' type='search' id='query' name='q' placeholder="Search...">
+			<script>
+				const f = document.getElementById('form');
+				const q = document.getElementById('query');
+				const google = 'https://www.google.com/search?q=site%3A';
+				const site = 'argyll-american-diner.com';
+
+				function submitted(event) {
+					event.preventDefault();
+					const url = google + site + '+' + q.value;
+					const win = window.open(url, '_blank');
+					win.focus();
+				}
+
+				f.addEventListener('submit', submitted);
+			</script>
+			<h5>©Argyll Ltd.</h5>
+		</center>
+	</body>
+</html>
